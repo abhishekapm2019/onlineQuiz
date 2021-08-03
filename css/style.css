@@ -7,65 +7,11 @@
 }
 body{
     font-family: 'Lato', sans-serif;
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
+    background: linear-gradient(#8655ac, #332042);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
-
-.container{
-    width: 940px;
-    background-color: #fff;
-    box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
-    min-height: 350px;
-    padding: 80px 90px;
-    border-radius: 10px;
-    display: flex;
-}
-
-.leftSide,.rightSide{
-    width: 50%;
-
-}
-.leftSide img{
-    height: 300px;
-    width: 300px;
-}
-
-.rightSide h1{
-    color: #1da3dd;
-    font-size: 32px;
-}
-.rightSide h2{
-    color: #444;
-    margin: 20px auto 10px;
-    font-size: 25px;
-}
-.rightSide ul{
-    color: #444;
-    font-size: 18px;
-    margin-top: 5px;
-    font-weight: 600;
-    list-style-type: circle;
-    list-style-position: inside;
-}
-
-.rightSide ul li{
-    margin-top: 5px;
-}
-.rightSide a{
-    background-color: #1da3dd;
-    border-radius: 100px;
-    color: #fff;
-    font-weight: 600;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 25px;
-    text-decoration: none;
 }
 
 /*question page css start*/
@@ -93,16 +39,12 @@ body{
     justify-content: space-between;
 }
 
-/* this can be removed */
-
 .scoreBox,.timerBox{
-    border-radius: 100px;
     padding: 10px 15px;
-    border:1px solid #444;
     color: #444;
 }
 .questionBox{
-    background-color: #594a76;
+    background: #583672;
     color: #fff;
     border-radius: 10px;
     padding: 10px 15px;
@@ -128,13 +70,19 @@ body{
 }
 
 .footer button{
-    background-color: #1da3dd;
+    /* background-color: #1da3dd; */
+    background: #583672;
     border-radius: 5px;
     padding: 7px 15px;
     color: #fff;
     border: 0;
     outline: none;
     font-size: 20px;
+}
+.footer button:hover{
+    text-decoration: none;
+    background: #774b99;
+    color: white;
 }
 .resultBox{
     margin-bottom: 30px;
@@ -156,7 +104,7 @@ body{
 }
 
 .buttonBox a{
-   background-color: #1da3dd;
+   background: #583672;
    border-radius: 50px;
    border: 0;
    text-decoration: none;
@@ -167,19 +115,13 @@ body{
    display: inline-block;
 }
 
+.optionBox span.answered{
+    
+    background-color: #105dec;
+    border-color: #105dec;
+    color:#fff;
+}
 
-.optionBox span.right{
-    /* for right answer */
-    background-color: #00ab00;
-    border-color: #00ab00;
-    color:#fff;
-}
-.optionBox span.wrong{
-    /* for wrong answer */
-    background-color: #ff3b0e;
-    border-color: #ff3b0e;
-    color:#fff;
-}
 /*question page css end*/
 
 

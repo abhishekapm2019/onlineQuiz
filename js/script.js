@@ -16,7 +16,7 @@ let totalQuestion=10;
 
 $(function(){
     //timer code start from here
-    let totalTime=200; //200 seconds
+    let totalTime=100; //100 seconds
     let min = 0;
     let sec = 0;
     let counter=0;
@@ -26,10 +26,10 @@ $(function(){
         min=Math.floor((totalTime-counter) / 60); //calculating min
         sec=totalTime - (min * 60) - counter;
 
-        $(".timerBox span").text(min+":"+sec);
+        $(".timerBox span").text(min+"min and "+sec+"sec");
 
         if(counter==totalTime){
-            alert("Time Up! Press ok to show result.");
+            alert("Time's Up! Press ok to submit the test.");
             //calling result fuction when timer ends
             result();
             clearInterval(timer);
@@ -67,11 +67,11 @@ function checkAnswer(option){
     // console.log(questions[index]);
 
     if(optionClicked==questions[index].answer){
-        $(option).addClass("right");
+        $(option).addClass("answered");
         score++;
     }
     else{
-        $(option).addClass("wrong");
+        $(option).addClass("answered");
         wrong++;
     }
 
@@ -86,6 +86,8 @@ function checkAnswer(option){
 
 
 
+
+
 //Function for the next question start
 
 function showNext(){
@@ -96,8 +98,10 @@ function showNext(){
     // }
 
     if(index >=9){
+            alert("Press ok to get result")
             showResult(0);
             return;
+        
         }
 
     index++;
@@ -124,7 +128,7 @@ function showResult(j){
     if(
         j==1&&
         index < questions.length - 1 &&
-        !confirm("Quiz has not finished yet. Press ok to skip quiz & get your final result.")
+        !confirm("Are you sure? The quiz has not finished yet. Press ok to skip quiz & get your final result.")
     ) {
         return;
     }
@@ -141,10 +145,9 @@ function result(){
     $("#resultScreen").show();
 
 
-    $("#totalQuestion").text(totalQuestion);
+    
     $("#attemptQuestion").text(attempt);
     $("#correctAnswers").text(score);
-    $("#wrongAnswers").text(wrong);
 }
 
 //Result function end
