@@ -1,5 +1,10 @@
 # Online-Quiz
 This is an online assesment platform made by Mousam, Nirmal and Abhishek.
+
+
+https://user-images.githubusercontent.com/70214997/128128942-2ba1b076-7210-48bb-bc98-9ff67c65b355.mp4
+
+
 # We worked for the following specifications:
 
 1) Assessment shall be of MCQ pattern
