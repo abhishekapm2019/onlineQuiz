@@ -96,6 +96,9 @@ function showNext(){
     //     showResult(0);
     //     return;
     // }
+    if(index>=8){
+        $("#Next").text("Finish");
+    }
 
     if(index >=9){
             alert("Press ok to get result")
