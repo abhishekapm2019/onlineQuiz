@@ -2,7 +2,7 @@
 This is an online assesment platform made by Mousam, Nirmal and Abhishek.
 # We worked for the following specifications:
 
-1) Assessment shall be MCQ pattern
+1) Assessment shall be of MCQ pattern
 
 2) There must be a question pool for the assessment: We used a quiz.js file containing questions, options and the correct answer.
 
